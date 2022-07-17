@@ -7,5 +7,8 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/mingw64.cmake)
 # Ключи компиляции
 add_compile_options(-std=c++17 -Wall -g)
 
+# Заголовочные файлы 
+include_directories("M:\\boost_1_79_0")
+
 # Сборка исполняемого файла
 add_executable(${PROJECT_NAME}	main.cpp)
